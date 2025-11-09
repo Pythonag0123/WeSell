@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup</title>
+  <link rel="stylesheet" href="css/signup.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>Create Account</h2>
+    <div class="form">
+      <form action="/register" method="post">
+        
+        <div class="input">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Choose a username" required/>
+        </div>
+
+        <div class="input">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required/>
+        </div>
+
+        <div class="input">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required/>
+        </div>
+
+        <div class="input">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required/>
+        </div>
+
+        <div class="input">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required/>
+        </div>
+
+        <div class="input">
+          <label>Gender</label>
+          <div class="gender-options">
+            <label><input type="radio" name="gender" value="male" required/> Male</label>
+            <label><input type="radio" name="gender" value="female"/> Female</label>
+            <label><input type="radio" name="gender" value="other"/> Other</label>
+          </div>
+        </div>
+
+        <div class="input">
+          <label for="role">Role</label>
+          <select id="role" name="role" required>
+            <option value="" disabled selected>Select your role</option>
+            <option value="buyer">Buyer</option>
+            <option value="seller">Seller</option>
+          </select>
+        </div>
+
+        <div class="input">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required/>
+        </div>
+
+        <input type="submit" value="Sign Up" class="login" />
+      </form>
+    </div>
+
+    <div class="message">
+      <p>Already have an account? <a href="/login">Login</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>We are the best one 🚀 | All rights reserved © 2025</p>
+  </footer>
+</body>
+</html>

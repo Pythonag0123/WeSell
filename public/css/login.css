@@ -1,0 +1,114 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #ffe4ec, #f7eaff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Card */
+.login-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #a12c77;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #5a2676;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #444;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #ff69b4;
+}
+
+/* Button */
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+  background: #e75491;
+}
+
+/* Message */
+.message {
+  margin-top: 20px;
+}
+
+.message p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.message a {
+  color: #d63384;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}

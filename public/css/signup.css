@@ -1,0 +1,135 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #ffe4ec, #f7eaff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Heading */
+.container h2 {
+  font-family: 'Playfair Display', serif;
+  color: #a12c77;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.form .input {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.form label {
+  font-size: 0.9rem;
+  color: #444;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 6px rgba(255, 105, 180, 0.3);
+}
+
+/* Gender radio buttons */
+.gender-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Button */
+.login {
+  width: 100%;
+  padding: 12px;
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.login:hover {
+  background: #e75491;
+}
+
+/* Message */
+.message {
+  margin-top: 18px;
+}
+
+.message p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.message a {
+  color: #d63384;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #5a2676;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
